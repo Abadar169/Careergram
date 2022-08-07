@@ -1,0 +1,350 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;   
+}
+
+body{
+  background: url("https://wallpaperaccess.com/full/345207.jpg");
+  /* background-color: #c4c4c4; */
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+li , a, button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EEF3D2;
+    text-decoration: none;
+}
+
+header {
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: relative;
+    bottom: 120px;
+    /* background-color: #78b0c4; */
+    background-color: #1bd2df95;
+}
+
+.logo1{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    right: 156px;
+    top:66px;
+    cursor: pointer;
+}
+
+.cta{
+    position: relative;
+    left: 110px;
+    bottom:8px;
+    top:60px;
+}
+
+.nav_links {
+    list-style: none;
+    position: relative;
+    bottom:9px;
+    left:335px;
+    top: 60px;
+}
+
+.nav_links li{
+    color: white;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color:#000000;
+}
+
+button{
+    padding: 9px 25px;
+background-color: #FF5959;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* .career-img{
+    display: flex;
+    background: url("./career1.jpg") no-repeat;
+    height: 500px;
+} */
+
+
+.heading{   /*Explore Career Possibilities*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700; 
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 3s linear infinite;
+  position: relative;
+}
+
+
+
+ @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  } 
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    column-gap: 1.33rem;
+    row-gap: 2rem;
+  }
+
+
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transform-style:preserve-3d;
+    transition: 0.4s;
+  }
+
+  .front, .back{
+    backface-visibility: hidden;
+    position: absolute;
+  }
+
+
+  .back{
+    width: 100%;
+    height: 100%;
+    background-color: #1bd2df95;
+    border-radius: 40px;
+    transform: rotateY(180deg);    
+  }
+
+   p{
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    top: 15px;
+    font-size: larger;
+    font-family: Bradley Hand ITC;
+    font-weight: bolder;
+   }
+
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+
+   .card:hover {
+    transform: rotateY(180deg);
+  }
+
+  .site-footer
+{
+  background-color:#151d3c;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+
